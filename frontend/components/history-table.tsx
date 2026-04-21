@@ -76,9 +76,9 @@ export function HistoryTable({ refreshKey }: HistoryTableProps) {
             No check history yet. Check a URL to get started!
           </div>
         ) : (
-          <div className="overflow-x-auto">
+          <div className="relative max-h-[440px] overflow-auto rounded-md border">
             <Table>
-              <TableHeader>
+              <TableHeader className="sticky top-0 z-10 bg-background">
                 <TableRow>
                   <TableHead>URL</TableHead>
                   <TableHead>Status</TableHead>
